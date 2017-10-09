@@ -40,6 +40,6 @@ do
   ipc=$(awk "NR==$i" "$1")
   echo -e "\n\e[1;32mBlade IP = $ipc\e[0m"
   export ipc
-  $(pwd)/scp_rzcopyremote.exp
+  $(pwd)/scp_rzcopyremote.tcl
 done
 
